@@ -1,0 +1,119 @@
+
+nav {
+    background:#030A8c;
+}
+
+ul {
+    overflow: hidden;
+    max-height: 56px;
+    transition: max-height 500ms ease;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: absolute;
+    user-select: none;
+}
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color 250ms ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 250ms ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+nav {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    list-style: none;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li:first-of-type {
+    font-size: larger;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+nav a:not(.small-caps) {
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: var(--lt-blue);
+    color: var(--med-grey);
+}
+
+nav h2 {
+    display: none;
+    height: 0;
+}
+
+.small-caps {
+    font-variant: small-caps;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+@media screen and (min-width:834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    label span, input {
+        display: none;
+    }
+}

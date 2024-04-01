@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    --dkest-blue: #020659;
+    --dk-blue: #020873;
+    --indigo: #030A8c;
+    --med-blue: #2104D9;
+    --blue: #0D8DFB;
+    --lt-blue: #2699FB;
+    --purple: #590242;
+    --dk-grey: #222;
+    --med-grey: #444444;
+    --lt-grey: #cecece;
+    --white: #FFFFFF;
+
+    --fonts: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+}
+
+html {
+    background-color: var(--dkest-blue);
+    font-family: var(--fonts);
+}
+
+body {
+    width: 375px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    z-index: 2;
+    background: linear-gradient(to right, #2104D9, #000000);
+}
+
+h1 {
+    font-family: geneva, sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    color: var(--white);
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+header p {
+    color: var(--white);
+    font-family: geneva, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-family: geneva, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--purple);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 35px 0 5px 25px;
+}
+
+#trending,
+#playlists,
+#curated {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#trending figure {
+    display: grid;
+    height: 311px;
+    margin: 10px;
+}
+
+#trending figcaption {
+    background-color: var(--lt-grey);
+    position: relative;
+    top: -45px;
+}
+
+#trending figure img {
+    clear: both;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+audio {
+    position: relative;
+    top: -240px;
+    margin: auto;
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+
+audio::-webkit-media-controls-enclosure {
+    background-color: #cececeb9;
+}
+
+#trending h3 {
+    font-family: Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--purple);
+    text-transform: uppercase;
+    margin: 5px 5px 0px 10px;
+}
+
+dl {
+    background-color: rgba(255, 255, 255, .25);
+    margin-left: 5px;
+    font-size: 1em;
+}
+
+dt {
+    font-style: italic;
+}
+
+dt,
+dd {
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+    color: var(--purple);
+    float: left;
+    margin: 5px;
+}
+
+.pseudo-button {
+    font-size: .75em;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--purple);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0 5px 25px;
+}
+
+.pseudo-button:hover {
+    background-color: var(--dkest-blue);
+}
