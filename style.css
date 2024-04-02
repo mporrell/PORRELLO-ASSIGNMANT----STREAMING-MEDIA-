@@ -381,7 +381,7 @@ footer {
     .playlists__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 12px;
+        gap: 8px;
         width: 100%;
     }
 

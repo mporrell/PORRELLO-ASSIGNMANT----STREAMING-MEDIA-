@@ -1,6 +1,6 @@
 
 nav {
-    background:#030A8c;
+    background:#020873;
     width: 100%;
 }
 
@@ -121,8 +121,7 @@ nav h2 {
         top: 0;
         display: grid;
         grid-template-columns: 1fr repeat(4, 0fr);
-        background: var(--med-blue)
-
+        background: #020873;
     }
 
     nav li {
