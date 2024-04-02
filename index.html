@@ -16,7 +16,8 @@
     <header>
         <h1>Smooth Jazz</h1>
         <p>
-            This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.
+            This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented
+            crossover jazz became dominant in the 1980s and early 1990s.
         </p>
     </header>
     <nav>
@@ -28,11 +29,11 @@
             <li><a href="#trending">Trending <br>Songs</a></li>
             <li><a href="#playlists">Your <br>Playlists</a></li>
             <li><a href="#curated">Curated <br>Playlists</a></li>
-            <li>
-                <a href="user">
+            <li class="user-profile__wrapper">
+                <a href="user" class="user-profile">
                     <img src="images/duke-silver.png" alt="user profile picture">
                 </a>
-            <li>
+            </li>
         </ul>
     </nav>
     <main>
@@ -103,88 +104,107 @@
                     alt="happy man with red sweater standing in front of blue brick wall" width="311" height="311">
                 <audio controls src="audio/successful-performance.mp3"></audio>
             </figure>
-
         </section>
 
         <p class="pseudo-button">More trending</p>
 
-        <section class="playlists">
-            <h2>Your Playlists</h2>
-            <section id="best">
-                <img src="images/best-of-2020-cover.png" alt="2020 with gold lettering and black background" width="146"
-                    height="116">
-                <h3>Best of 2020</h3>
-                <p>The music that got you through the lock down.</p>
+        <section class="playlists__wrapper">
+            <section>
+                <h2>Your Playlists</h2>
+
+                <div class="playlists">
+                    <div class="playlist">
+                        <img src="images/best-of-2020-cover.png" alt="2020 with gold lettering and black background"
+                            width="146" height="116">
+                        <h3>Best of 2020</h3>
+                        <p>The music that got you through the lock down.</p>
+                    </div>
+
+                    <div class="playlist">
+                        <img src="images/pumpkin-spice-cover.png" alt="top view of a pumpkin spice latte in a mug"
+                            width="146" height="116">
+                        <h3>Pumpkin Spice</h3>
+                        <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+                    </div>
+
+                    <div class="playlist">
+                        <img src="images/quiet-storm-cover.png"
+                            alt="blue and purple clouds with a lightening strike going through them" width="146"
+                            height="116">
+                        <h3>Quiet Storm</h3>
+                        <p>Slow tempos and relaxed rhythms.</p>
+                    </div>
+
+                    <div class="playlist">
+                        <img src="images/smooth-jazz-cover.png"
+                            alt="older man wearing glasses and a green shirt in front of a grey background" width="146"
+                            height="116">
+                        <h3>Smooth Jazz</h3>
+                        <p>The pioneers of smooth jazz.</p>
+                    </div>
+
+                    <div class="playlist">
+                        <img src="images/smooth-study-cover.png" alt="man typing on laptop" width="146" height="116">
+                        <h3>Smooth Study</h3>
+                        <p>Background music to keep you going while you study.</p>
+                    </div>
+                </div>
+
+                <p class="pseudo-button">All your playlists</p>
             </section>
 
-            <section id="pumpkin">
-                <img src="images/pumpkin-spice-cover.png" alt="top view of a pumpkin spice latte in a mug" width="146"
-                    height="116">
-                <h3>Pumpkin Spice</h3>
-                <p>Creamy and spicy, just like your favorite autumnal latte.</p>
-            </section>
+            <section>
+                <h2>Curated Playlists</h2>
 
-            <section id="storm">
-                <img src="images/quiet-storm-cover.png"
-                    alt="blue and purple clouds with a lightening strike going through them" width="146" height="116">
-                <h3>Quiet Storm</h3>
-                <p>Slow tempos and relaxed rhythms.</p>
-            </section>
+                <div class="playlists curated">
+                    <div class="playlist">
+                        <img src="images/boozy-brunch-cover.png" alt="people toasting with cocktails" width="146"
+                            height="116">
+                        <h3>Boozy Brunch</h3>
+                        <p>Light up the afternoon with these energetic hits.</p>
+                    </div>
 
-            <section id="jazz">
-                <img src="images/smooth-jazz-cover.png"
-                    alt="older man wearing glasses and a green shirt in front of a grey background" width="146"
-                    height="116">
-                <h3>Smooth Jazz</h3>
-                <p>The pioneers of smooth jazz.</p>
-            </section>
+                    <div class="playlist">
+                        <img src="images/dinner-party-cover.png" alt="table spread with wine, candles, and food"
+                            width="146" height="116">
+                        <h3>Dinner Party</h3>
+                        <p>
+                            Background music to give your party life, but allow your guests to chat.
+                        </p>
+                    </div>
 
-            <section id="study">
-                <img src="images/smooth-study-cover.png" alt="man typing on laptop" width="146" height="116">
-                <h3>Smooth Study</h3>
-                <p>Background music to keep you going while you study.</p>
+                    <div class="playlist">
+                        <img src="images/mellow-cover.png"
+                            alt="two people sitting on a far away park bench surrounded by fall trees" width="146"
+                            height="116">
+                        <h3>Mellow</h3>
+                        <p>
+                            Relax after a stressful day with this collection of extra smooth jazz.
+                        </p>
+                    </div>
+
+                    <div class="playlist">
+                        <img src="images/jazz-chill-cover.png" alt="close up view of rose petals" width="146"
+                            height="116">
+                        <h3>Jazz and Chill</h3>
+                        <p>Set the mood with these silky sounds.</p>
+                    </div>
+
+                    <div class="playlist">
+                        <img src="images/smooth-saxophone-cover.png" alt="close up view of saxaphone" width="146"
+                            height="116">
+                        <h3>Jazz Saxophone</h3>
+                        <p>The greatest collection of your sax favorites.</p>
+                    </div>
+                </div>
+
+                <p class="pseudo-button">More curated</p>
             </section>
-            <p class="pseudo-button">All your playlists</p>
         </section>
 
-        <section class="curated">
-            <h2>Curated Playlists</h2>
-            <section id="brunch">
-                <img src="images/boozy-brunch-cover.png" alt="people toasting with cocktails" width="146" height="116">
-                <h3>Boozy Brunch</h3>
-                <p>Light up the afternoon with these energetic hits.</p>
-            </section>
-
-            <section id="dinner">
-                <img src="images/dinner-party-cover.png" alt="table spread with wine, candles, and food" width="146"
-                    height="116">
-                <h3>Dinner Party</h3>
-                <p>Background music to give your party life, but allow your guests to chat.</p>
-            </section>
-
-            <section id="mellow">
-                <img src="images/mellow-cover.png"
-                    alt="two people sitting on a far away park bench surrounded by fall trees" width="146" height="116">
-                <h3>Mellow</h3>
-                <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
-            </section>
-
-            <section id="chill">
-                <img src="images/jazz-chill-cover.png" alt="close up view of rose petals" width="146" height="116">
-                <h3>Jazz and Chill</h3>
-                <p>Set the mood with these silky sounds.</p>
-            </section>
-
-            <section id="saxophone">
-                <img src="images/smooth-saxophone-cover.png" alt="close up view of saxaphone" width="146" height="116">
-                <h3>Jazz Saxophone</h3>
-                <p>The greatest collection of your sax favorites.</p>
-            </section>
-            <p class="pseudo-button">More curated</p>
-        </section>
     </main>
     <footer>
-        <p>Copyright 2022 Smooth Jazz</p>
+        <small>Copyright 2022 Smooth Jazz</small>
     </footer>
 </body>
 

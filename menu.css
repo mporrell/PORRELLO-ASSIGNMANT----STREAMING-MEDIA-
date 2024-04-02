@@ -1,6 +1,7 @@
 
 nav {
     background:#030A8c;
+    width: 100%;
 }
 
 ul {
@@ -62,7 +63,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 nav {
     z-index: 1;
-    position: sticky;
+    position: absolute;
     top: 0;
 }
 
@@ -74,10 +75,6 @@ nav li {
     justify-content: center;
 }
 
-nav li:first-of-type {
-    font-size: larger;
-}
-
 nav a {
     text-decoration: none;
     display: inline;
@@ -85,12 +82,20 @@ nav a {
 }
 
 nav a:not(.small-caps) {
+    transition: 250ms; 
+    padding: 8px;
+}
+
+nav a:not(.user-profile, .small-caps) {
+    width: 100%;
     text-transform: uppercase;
+    margin: 4px 8px;
+    border-radius: 4px;
 }
 
 nav a:hover {
-    background-color: var(--lt-blue);
-    color: var(--med-grey);
+    background-color: #590242;
+    color: white;
 }
 
 nav h2 {
@@ -104,16 +109,28 @@ nav h2 {
     font-weight: bold;
 }
 
+.user-profile {
+    border-radius: 100%;
+    padding: 8px;
+}
+
 @media screen and (min-width:834px) {
     ul {
         overflow: visible;
         position: absolute;
         top: 0;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: 1fr repeat(4, 0fr);
+        background: var(--med-blue)
+
+    }
+
+    nav li {
+        margin-left: 16px;
+        justify-content: start;
     }
 
     label span, input {
         display: none;
-    }
+    }    
 }
